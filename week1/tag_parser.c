@@ -278,8 +278,6 @@ int main(int count, char** args){
 
     int nextTotalSize = TAG_HEADER_SIZE + fileContent + nextTagSize;
     fwrite(outbuf, nextTotalSize, 1, out);
-//    fwrite(outbuf, TAG_HEADER_SIZE, 1, out);
-//    fwrite(buf, len - TAG_HEADER_SIZE, 1, out);
     fclose(out);
 
     printf("Successfully finished writing new file with size %d\n", nextTotalSize);
