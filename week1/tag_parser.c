@@ -155,7 +155,7 @@ int main(int count, char** args){
     int frameIdSize = major < 3 ? 6 : 10;
     int pos = 0;
 
-    FrameArray* frames = createArray(10);
+    FrameArray* frames = createArray(20);
     while(1){
         int rem = tagSize - pos;
         if(rem < frameIdSize)
