@@ -15,6 +15,6 @@ add_executable(w1task10 week1/task10.c)
 add_executable(w1task11 week1/task11.c week1/circle.h week1/circle.c )
 add_executable(w1task12 week1/task12.c)
 add_executable(w1task13p week1/tag_parser.c)
-add_executable(stack week1/stack.c)
 
 add_executable(w2task1 week2/lab1/task1.cpp week2/lab1/task1.h)
+add_executable(w2task2 week2/lab2/task2.cpp week2/lab2/task2.h)
