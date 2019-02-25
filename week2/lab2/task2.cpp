@@ -1,7 +1,9 @@
 #include "task2.h"
+#include <cmath>
 #include <iostream>
 
 using namespace std;
+
 
 Complex operator*(Complex lhs, double value) {
     return Complex{lhs.real * value, lhs.imagin * value};

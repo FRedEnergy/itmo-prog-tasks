@@ -7,7 +7,6 @@ void changeLargestRef(int &a, int &b) {
         a = a % b;
     else
         b = b % a;
-
 }
 
 void changeLargestPtr(int *a, int *b) {

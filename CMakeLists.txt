@@ -18,3 +18,4 @@ add_executable(w1task13p week1/tag_parser.c)
 
 add_executable(w2task1 week2/lab1/task1.cpp week2/lab1/task1.h)
 add_executable(w2task2 week2/lab2/task2.cpp week2/lab2/task2.h)
+add_executable(w2task3 week2/lab3/vector3.cpp week2/lab3/vector3.h week2/lab3/polynom.cpp week2/lab3/polynom.h)
