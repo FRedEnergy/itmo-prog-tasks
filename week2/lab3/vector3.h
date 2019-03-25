@@ -27,6 +27,4 @@ public:
     double getZ();
 };
 
-
-
-#endif //ITMO_PROG_TASKS_VECTOR3_H
+#endif
