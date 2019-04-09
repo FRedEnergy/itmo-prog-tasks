@@ -20,4 +20,8 @@ add_executable(w2task1 week2/lab1/task1.cpp week2/lab1/task1.h)
 add_executable(w2task2 week2/lab2/task2.cpp week2/lab2/task2.h)
 add_executable(w2task3 week2/lab3/vector3.cpp week2/lab3/vector3.h week2/lab3/polynom.cpp week2/lab3/polynom.h)
 add_executable(w2task4 week2/lab4/ellipse.cpp week2/lab4/ellipse.h week2/lab4/circle.cpp week2/lab4/circle.h)
-
+add_executable(w2task5 week2/lab5/main.cpp week2/lab5/BaseCObject.h week2/lab5/CVector2D.h week2/lab5/IDialogInitable.h
+                    week2/lab5/IGeoFig.h week2/lab5/IPhysObject.h week2/lab5/IPrintable.h
+        week2/lab5/Triangle.h week2/lab5/Hexagon.h)
+add_executable(w2task67 week2/lab67/main.cpp week2/lab67/queue.h)
+add_executable(w2task9 week2/lab9/main.cpp)
