@@ -38,7 +38,7 @@ public:
         if(size == 0)
             throw new queue_is_empty();
 
-        T result = data[--tail % N];
+        T result = data[++tail % N];
         --size;
         return result;
     }
