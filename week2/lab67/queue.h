@@ -3,15 +3,17 @@
 #ifndef ITMO_PROG_TASKS_QUEUE_H
 #define ITMO_PROG_TASKS_QUEUE_H
 
-class queue_exception: std::exception{};
+class queue_exception: public std::exception{};
 
 class queue_limit_reached: queue_exception{
+public:
     virtual const char *what() const throw(){
         return "Queue limit reached";
     }
 };
 
 class queue_is_empty: queue_exception{
+public:
     virtual const char *what() const throw() {
         return "Queue is empty";
     }

@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
 project(itmo_prog_tasks)
 
+set(ENV{PKG_CONFIG_PATH} "/usr/local/opt/libffi/lib/pkgconfig:/usr/local/opt/libxml2/lib/pkgconfig")
 set(CMAKE_CXX_STANDARD 11)
+SET(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS}  -Wno-deprecated )
 
 add_executable(w1task2 week1/task2.c)
 add_executable(w1task3 week1/task3.c)
@@ -24,4 +26,15 @@ add_executable(w2task5 week2/lab5/main.cpp week2/lab5/BaseCObject.h week2/lab5/C
                     week2/lab5/IGeoFig.h week2/lab5/IPhysObject.h week2/lab5/IPrintable.h
         week2/lab5/Triangle.h week2/lab5/Hexagon.h)
 add_executable(w2task67 week2/lab67/main.cpp week2/lab67/queue.h)
+add_executable(w2task8 week2/lab8/main.cpp)
+
 add_executable(w2task9 week2/lab9/main.cpp)
+find_package(CURL REQUIRED)
+find_package(PkgConfig REQUIRED)
+pkg_search_module(LibXML++ REQUIRED libxml++-2.6)
+
+include_directories(${CURL_INCLUDE_DIR} ${LibXML++_INCLUDE_DIRS})
+
+target_link_libraries(w2task9
+        ${CURL_LIBRARIES}
+        ${LibXML++_LIBRARIES})
